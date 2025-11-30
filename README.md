@@ -93,5 +93,5 @@ Les résultats montrent une **performance remarquable (>98%)**, démontrant la r
 - **Rim Salmoun**  
 - **Zerktouni Roqia**  
 - **Wissal El Idrissi**  
-- **Rafyk Mohamed**
+- **Rafyq Mohamed**
 
