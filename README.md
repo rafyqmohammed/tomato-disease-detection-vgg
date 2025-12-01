@@ -87,6 +87,43 @@ Le modèle final a été évalué sur le test set avec :
 Les résultats montrent une **performance remarquable (>98%)**, démontrant la robustesse du modèle et la qualité du pipeline.
 
 ---
+💻 Développement et Déploiement de l’Interface Utilisateur
+
+L’interface utilisateur a été conçue avec Streamlit afin de permettre une interaction simple, rapide et intuitive avec le modèle de détection des maladies des feuilles de tomate.
+Elle sert de passerelle entre l’utilisateur et le modèle VGG16 fine-tuné, tout en assurant un fonctionnement fluide et cohérent.
+
+🎨 Développement de l’interface
+
+-L’interface propose plusieurs fonctionnalités essentielles :
+
+-Téléversement d’une image de feuille de tomate.
+
+-Affichage immédiat de l’image importée.
+
+-Application automatique du prétraitement nécessaire (redimensionnement, normalisation).
+
+-Chargement du modèle final entraîné et exécution de la prédiction.
+
+-Affichage du résultat : maladie prédite + probabilité.
+
+-Tableau des probabilités pour l’ensemble des 10 classes.
+
+Elle reprend exactement les mêmes transformations et le même pipeline que celui utilisé lors de l'entraînement, garantissant une inférence cohérente.
+
+🚀 Déploiement (Exécution Locale)
+-Démarrer Streamlit :
+
+streamlit run app.py
+
+
+-Accéder à l’interface :
+
+http://localhost:8501
+
+
+Cette exécution locale permet une utilisation rapide et garantit un fonctionnement fiable, parfaitement adapté à un projet académique ou une démonstration interne.
+
+---
 
 ## 👥 Contributeurs
 
