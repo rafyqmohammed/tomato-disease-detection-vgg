@@ -90,38 +90,43 @@ Les résultats montrent une **performance remarquable (>98%)**, démontrant la r
 💻 Développement et Déploiement de l’Interface Utilisateur
 
 L’interface utilisateur a été conçue avec Streamlit afin de permettre une interaction simple, rapide et intuitive avec le modèle de détection des maladies des feuilles de tomate.
-Elle sert de passerelle entre l’utilisateur et le modèle VGG16 fine-tuné, tout en assurant un fonctionnement fluide et cohérent.
+Elle joue le rôle d’une passerelle fluide entre l’utilisateur et le modèle VGG16 fine-tuné.
 
 🎨 Développement de l’interface
 
--L’interface propose plusieurs fonctionnalités essentielles :
+L’interface propose un ensemble de fonctionnalités essentielles :
 
--Téléversement d’une image de feuille de tomate.
+Téléversement d’une image de feuille de tomate
 
--Affichage immédiat de l’image importée.
+Affichage immédiat de l’image importée
 
--Application automatique du prétraitement nécessaire (redimensionnement, normalisation).
+Application automatique du prétraitement (redimensionnement, normalisation)
 
--Chargement du modèle final entraîné et exécution de la prédiction.
+Chargement du modèle final entraîné
 
--Affichage du résultat : maladie prédite + probabilité.
+Exécution de la prédiction en temps réel
 
--Tableau des probabilités pour l’ensemble des 10 classes.
+Affichage de la maladie détectée avec son pourcentage de confiance
 
-Elle reprend exactement les mêmes transformations et le même pipeline que celui utilisé lors de l'entraînement, garantissant une inférence cohérente.
+Tableau des probabilités pour les 10 classes du dataset
 
-🚀 Déploiement (Exécution Locale)
--Démarrer Streamlit :
+Elle réutilise exactement le même pipeline de transformations que lors de l’entraînement, assurant une parfaite cohérence entre apprentissage et inférence.
+
+🚀 Déploiement (Exécution locale)
+
+L’application a été exécutée localement dans l’environnement du projet, sans déploiement Cloud.
+
+Pour lancer l’interface :
 
 streamlit run app.py
 
 
--Accéder à l’interface :
+Une fois l’application démarrée, elle est accessible depuis le navigateur à l’adresse :
 
 http://localhost:8501
 
 
-Cette exécution locale permet une utilisation rapide et garantit un fonctionnement fiable, parfaitement adapté à un projet académique ou une démonstration interne.
+Cette exécution locale permet une utilisation rapide, fiable et parfaitement adaptée à un projet académique, une démonstration ou une validation du modèle.
 
 ---
 
