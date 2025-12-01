@@ -87,43 +87,43 @@ Le modèle final a été évalué sur le test set avec :
 Les résultats montrent une **performance remarquable (>98%)**, démontrant la robustesse du modèle et la qualité du pipeline.
 
 ---
-💻 Développement et Déploiement de l’Interface Utilisateur
+## 💻 Développement et Déploiement de l’Interface Utilisateur
 
 L’interface utilisateur a été conçue avec Streamlit afin de permettre une interaction simple, rapide et intuitive avec le modèle de détection des maladies des feuilles de tomate.
 Elle joue le rôle d’une passerelle fluide entre l’utilisateur et le modèle VGG16 fine-tuné.
 
-🎨 Développement de l’interface
+🎨 **Développement de l’interface**
 
-L’interface propose un ensemble de fonctionnalités essentielles :
+-**L’interface propose un ensemble de fonctionnalités essentielles :**
 
-Téléversement d’une image de feuille de tomate
+-**Téléversement d’une image de feuille de tomate**
 
-Affichage immédiat de l’image importée
+-**Affichage immédiat de l’image importée**
 
-Application automatique du prétraitement (redimensionnement, normalisation)
+-**Application automatique du prétraitement (redimensionnement, normalisation)**
 
-Chargement du modèle final entraîné
+-**Chargement du modèle final entraîné**
 
-Exécution de la prédiction en temps réel
+-**Exécution de la prédiction en temps réel**
 
-Affichage de la maladie détectée avec son pourcentage de confiance
+-**Affichage de la maladie détectée avec son pourcentage de confiance**
 
-Tableau des probabilités pour les 10 classes du dataset
+-**Tableau des probabilités pour les 10 classes du dataset**
 
-Elle réutilise exactement le même pipeline de transformations que lors de l’entraînement, assurant une parfaite cohérence entre apprentissage et inférence.
+-**Elle réutilise exactement le même pipeline de transformations que lors de l’entraînement, assurant une parfaite cohérence entre apprentissage et inférence.**
 
-🚀 Déploiement (Exécution locale)
+## 🚀 Déploiement (Exécution locale)
 
 L’application a été exécutée localement dans l’environnement du projet, sans déploiement Cloud.
 
 Pour lancer l’interface :
 
-streamlit run app.py
+**streamlit run app.py**
 
 
 Une fois l’application démarrée, elle est accessible depuis le navigateur à l’adresse :
 
-http://localhost:8501
+**http://localhost:8501**
 
 
 Cette exécution locale permet une utilisation rapide, fiable et parfaitement adaptée à un projet académique, une démonstration ou une validation du modèle.
